@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "crypto-noobs"
+    }
+  },
+  "defaultProject": "crypto-noobs",
+  "cli": {
+    "analytics": "4944f0ec-647a-4e29-aee4-ba167ec7240f"
+  }
 }
