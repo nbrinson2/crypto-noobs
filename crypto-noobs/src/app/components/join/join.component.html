@@ -1,6 +1,14 @@
+<span class="ml-4 text-info" style="border-bottom: solid blue 2px;">Current Users in DB</span>
+<div *ngFor="let user of users | async">
+    <ul>
+        <li> {{user.email}}</li>
+        <li> {{user.phone}}</li>
+    </ul>
+</div>
 <div class="row">
-    <div class="card col-md-12 col-sm-8 ml-3 mt-3" style="border: solid rgb(255, 255, 255) 2px; background-color: transparent;">
-        <div class="card-body wd-75">
+    <div class="card col-md-12 col-sm-8" style="align-items: center;">
+        <div class="card-body wd-75 justify-content-center"
+            style="border: solid rgb(37, 20, 192) 2px; width: 70%;height: 70%;">
             <form [formGroup]="myForm">
                 <h6 class="heading-small text-muted">Profile information</h6>
                 <div class="pl-lg-4">
@@ -95,11 +103,4 @@
             </form>
         </div>
     </div>
-</div>
-<span class="ml-3 mt-3">Users in DB</span>
-<div *ngFor="let user of users | async">
-    <ul>
-        <li> {{user.email}}</li>
-        <li> {{user.phone}}</li>
-    </ul>
 </div>
