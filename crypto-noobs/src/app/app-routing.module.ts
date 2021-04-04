@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
+import { JoinComponent } from '../app/components/join/join.component';
 
 const routes: Routes = [
 ];
@@ -11,4 +11,4 @@ const routes: Routes = [
 })
 export class AppRoutingModule { }
 
-export const routingComponents = [];
+export const routingComponents = [JoinComponent];
