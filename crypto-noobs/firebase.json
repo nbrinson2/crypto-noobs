@@ -7,7 +7,7 @@
     "indexes": "firestore.indexes.json"
   },
   "hosting": {
-    "public": "public",
+    "public": "dist/crypto-noobs",
     "ignore": [
       "firebase.json",
       "**/.*",
