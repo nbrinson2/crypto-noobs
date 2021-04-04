@@ -11,7 +11,8 @@ import {
 import { Observable, from } from 'rxjs';
 import { map, tap, take, switchMap, mergeMap, expand, takeWhile } from 'rxjs/operators';
 
-import * as firebase from "firebase/app"
+import firebase from 'firebase/app'
+
 
 
 type CollectionPredicate<T> = string | AngularFirestoreCollection<T>;
