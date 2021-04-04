@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Observable } from 'rxjs';
+import { TwitterService } from 'src/app/services/twitter.service';
 import { SubmitFormModel } from '../../models/user-join-form';
 import { FirestoreService } from '../../services/firebase.service';
 
@@ -17,8 +18,9 @@ export class JoinComponent implements OnInit {
   // tslint:disable-next-line:variable-name
   constructor(
     private fb: FormBuilder,
-    private db: FirestoreService
-  ) {}
+    private db: FirestoreService,
+    private ts: TwitterService
+  ) { }
   onSubmit() {
     if (this.myForm.status === 'VALID') {
       this.profileRequestFormObject = {
@@ -36,6 +38,9 @@ export class JoinComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.ts.getTweets().subscribe(tweets => {
+      console.log(tweets);
+    });
     this.users = this.db.colWithIds$('users');
     // form for database
     this.myForm = this.fb.group({

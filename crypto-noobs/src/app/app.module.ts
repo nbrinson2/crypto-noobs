@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { FirestoreService } from './services/firebase.service';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { ReactiveFormsModule } from '@angular/forms';
+import { TwitterService } from './services/twitter.service';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     AngularFireDatabaseModule,
     AngularFirestoreModule,
   ],
-  providers: [FirestoreService],
+  providers: [FirestoreService, TwitterService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

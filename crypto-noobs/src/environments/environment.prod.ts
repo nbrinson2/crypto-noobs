@@ -9,5 +9,6 @@ export const environment = {
     messagingSenderId: "601865228043",
     appId: "1:601865228043:web:133e0912e97f2ea9689c0e",
     measurementId: "G-45W5R34NLF"
-  }
+  },
+  twitterBearerToken: 'AAAAAAAAAAAAAAAAAAAAABcpOQEAAAAAoudyd5Z5kWgg6pw%2FCD0edyvlmgk%3DDYZqq64MveljMrujnSuAqaG7BPa4xj31R5uyjb7Nev7ry8bhIg'
 };
