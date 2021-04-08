@@ -20,10 +20,15 @@ import {
   NbToastrModule,
   NbWindowModule,
 } from '@nebular/theme';
+import { environment } from '../environments/environment.prod';
+import { AngularFireModule } from '@angular/fire';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FirestoreService } from './services/firestore.service';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
+    AngularFireModule.initializeApp(environment.firebase, 'crypto-noobs'),
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
@@ -39,8 +44,10 @@ import {
     }),
     CoreModule.forRoot(),
     ThemeModule.forRoot(),
+    ReactiveFormsModule
   ],
   bootstrap: [AppComponent],
+  providers: [FirestoreService]
 })
 export class AppModule {
 }
