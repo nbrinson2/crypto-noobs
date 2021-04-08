@@ -140,7 +140,7 @@ export class FirestoreService {
         take(1),
         tap((d: Action<DocumentSnapshotDoesNotExist | DocumentSnapshotExists<any>>) => {
           const tock = new Date().getTime() - tick;
-          console.log(`Loaded Document in ${tock}ms`, d);
+          // console.log(`Loaded Document in ${tock}ms`, d);
         }),
       )
       .subscribe();
@@ -154,7 +154,7 @@ export class FirestoreService {
         take(1),
         tap((c: DocumentChangeAction<any>[]) => {
           const tock = new Date().getTime() - tick;
-          console.log(`Loaded Collection in ${tock}ms`, c);
+          // console.log(`Loaded Collection in ${tock}ms`, c);
         }),
       )
       .subscribe();
