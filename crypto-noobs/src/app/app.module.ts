@@ -44,10 +44,10 @@ import { FirestoreService } from './services/firestore.service';
     }),
     CoreModule.forRoot(),
     ThemeModule.forRoot(),
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   bootstrap: [AppComponent],
-  providers: [FirestoreService]
+  providers: [FirestoreService],
 })
 export class AppModule {
 }

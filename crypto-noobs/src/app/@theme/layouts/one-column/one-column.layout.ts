@@ -27,7 +27,7 @@ import { LayoutService } from '../../../@core/utils';
 })
 export class OneColumnLayoutComponent {
   constructor(private sidebarService: NbSidebarService,
-    private layoutService: LayoutService,) {
+    private layoutService: LayoutService) {
 }
 
   toggleSidebar(): boolean {

@@ -33,7 +33,7 @@ import { LayoutService } from '../../../@core/utils';
 })
 export class ThreeColumnsLayoutComponent {
   constructor(private sidebarService: NbSidebarService,
-    private layoutService: LayoutService,) {
+    private layoutService: LayoutService) {
 }
 
   toggleSidebar(): boolean {
