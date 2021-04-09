@@ -244,4 +244,14 @@ export const MENU_ITEMS: NbMenuItem[] = [
       },
     ],
   },
+  {
+    title: 'Contact',
+    icon: 'phone',
+    children: [
+      {
+        title: 'Contact Us',
+        link: '/pages/miscellaneous/contact',
+      },
+    ],
+  },
 ];
