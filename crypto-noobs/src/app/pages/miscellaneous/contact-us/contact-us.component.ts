@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FirestoreService } from '../../../services/firestore.service';
 import {UserContact} from '../models/user-contact';
 
 @Component({
@@ -11,7 +12,7 @@ export class ContactUsComponent implements OnInit {
   myForm: FormGroup;
   userContactFormObject: UserContact;
 
-  constructor(private fb: FormBuilder) { }
+  constructor(private fb: FormBuilder, private fs: FirestoreService) { }
 
   ngOnInit(): void {
     this.myForm = this.fb.group({
@@ -20,7 +21,7 @@ export class ContactUsComponent implements OnInit {
       lastName: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
       subject: ['', Validators.required],
-      meassage: ['', Validators.required],
+      message: ['', Validators.required],
     });
   }
 
@@ -35,6 +36,7 @@ export class ContactUsComponent implements OnInit {
         subject: this.subject.value,
         isValid: true,
       };
+      this.fs.add('contactMessages', this.userContactFormObject);
     }
   }
   get userName() {
