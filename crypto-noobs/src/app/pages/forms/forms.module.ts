@@ -19,6 +19,8 @@ import { FormLayoutsComponent } from './form-layouts/form-layouts.component';
 import { DatepickerComponent } from './datepicker/datepicker.component';
 import { ButtonsComponent } from './buttons/buttons.component';
 import { FormsModule as ngFormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FirestoreService } from '../../services/firestore.service';
 
 @NgModule({
   imports: [
@@ -35,6 +37,7 @@ import { FormsModule as ngFormsModule } from '@angular/forms';
     NbSelectModule,
     NbIconModule,
     ngFormsModule,
+    ReactiveFormsModule,
   ],
   declarations: [
     FormsComponent,
@@ -43,5 +46,6 @@ import { FormsModule as ngFormsModule } from '@angular/forms';
     FormLayoutsComponent,
     DatepickerComponent,
   ],
+  providers: [FirestoreService],
 })
 export class FormsModule { }

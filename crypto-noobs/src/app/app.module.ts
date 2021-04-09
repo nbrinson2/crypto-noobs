@@ -22,8 +22,7 @@ import {
 } from '@nebular/theme';
 import { environment } from '../environments/environment.prod';
 import { AngularFireModule } from '@angular/fire';
-import { ReactiveFormsModule } from '@angular/forms';
-import { FirestoreService } from './services/firestore.service';
+
 
 @NgModule({
   declarations: [AppComponent],
@@ -44,10 +43,8 @@ import { FirestoreService } from './services/firestore.service';
     }),
     CoreModule.forRoot(),
     ThemeModule.forRoot(),
-    ReactiveFormsModule,
   ],
   bootstrap: [AppComponent],
-  providers: [FirestoreService],
 })
 export class AppModule {
 }
