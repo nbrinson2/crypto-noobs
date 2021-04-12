@@ -1,12 +1,12 @@
-<div class="row">
+<!-- <div class="row">
   <div class="col-xxxl-3 col-md-6" *ngFor="let statusCard of statusCards">
     <ngx-status-card [title]="statusCard.title" [type]="statusCard.type">
       <i [ngClass]="statusCard.iconClass"></i>
     </ngx-status-card>
   </div>
-</div>
+</div> -->
 
-<div class="row">
+<!-- <div class="row">
   <div class="col-xxxl-3 col-xxl-4 col-lg-5 col-md-6">
     <ngx-temperature></ngx-temperature>
   </div>
@@ -14,10 +14,13 @@
   <div class="col-xxxl-9 col-xxl-8 col-lg-7 col-md-6">
     <ngx-electricity></ngx-electricity>
   </div>
-</div>
+</div> -->
 
 <div class="row">
-  <div class="col-xxxl-9 col-xl-12">
+  <div class="col">
+    <ngx-security-cameras></ngx-security-cameras>
+  </div>
+  <!-- <div class="col-xxxl-9 col-xl-12">
     <ngx-rooms></ngx-rooms>
   </div>
 
@@ -34,9 +37,68 @@
   <div class="col-xxxl-3 col-xxl-4 col-md-5">
     <ngx-traffic></ngx-traffic>
     <ngx-weather></ngx-weather>
-  </div>
+  </div> -->
 
-  <div class="col-xxxl-6 col-xxl-12 col-md-7">
-    <ngx-security-cameras></ngx-security-cameras>
+</div>
+
+<div class="row">
+  <div class="col">
+    <nb-card>
+      <nb-card-body>
+        It is a long established fact that a reader will be distracted by the readable content of a page when looking at
+        its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+        opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing
+        packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum'
+        will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by
+        accident, sometimes on purpose (injected humour and the like).
+      </nb-card-body>
+    </nb-card>
   </div>
 </div>
+
+<div class="row">
+  <hr class="col">
+</div>
+
+<div class="row">
+  <h1 class="col">Services</h1>
+</div>
+
+<div class="row">
+  <nb-card class="col" size="giant">
+    <div class="grid-container">
+        <div class="grid-view">
+          <div class="services" [style.background-image]="'url(' + 'assets/images/team.png' + ')'"></div>
+          <div class="services" [style.background-image]="'url(' + 'assets/images/camera4.jpg' + ')'"></div>
+          <div class="services" [style.background-image]="'url(' + 'assets/images/camera3.jpg' + ')'"></div>
+          <div class="services" [style.background-image]="'url(' + 'assets/images/camera2.jpg' + ')'"></div>
+          <div class="services" [style.background-image]="'url(' + 'assets/images/team.png' + ')'"></div>
+          <div class="services" [style.background-image]="'url(' + 'assets/images/camera4.jpg' + ')'"></div>
+          <div class="services" [style.background-image]="'url(' + 'assets/images/camera3.jpg' + ')'"></div>
+          <div class="services" [style.background-image]="'url(' + 'assets/images/camera2.jpg' + ')'"></div>
+        </div>
+    </div>
+  </nb-card>
+  
+
+</div>
+
+
+<div class="row">
+  <hr class="col">
+</div>
+
+<div class="row">
+  <h1 class="col">Resources</h1>
+</div>
+
+<div class="row">
+  <div class="col-xxxl-3 col-md-6" *ngFor="let statusCard of statusCards">
+    <a href="{{statusCard.link}}" target="_blank" style="text-decoration: none">
+      <ngx-status-card [title]="statusCard.title" [type]="statusCard.type" [logo]="statusCard.logo">
+        <!-- <i [ngClass]="statusCard.iconClass" [style.background-image]="'url(' + 'assets/images/Coinmarketcap.jpg' + ')'"></i> -->
+      </ngx-status-card>
+    </a>
+  </div>
+</div>
+

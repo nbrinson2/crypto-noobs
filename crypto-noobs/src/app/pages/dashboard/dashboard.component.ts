@@ -7,6 +7,8 @@ interface CardSettings {
   title: string;
   iconClass: string;
   type: string;
+  link?: string;
+  logo?: string;
 }
 
 @Component({
@@ -20,24 +22,35 @@ export class DashboardComponent implements OnDestroy {
 
   solarValue: number;
   lightCard: CardSettings = {
-    title: 'Light',
-    iconClass: 'nb-lightbulb',
+    title: 'CoinMarketCap',
+    iconClass: '',
     type: 'primary',
+    link: 'https://coinmarketcap.com/',
+    logo: 'assets/images/Coinmarketcap.jpg'
   };
   rollerShadesCard: CardSettings = {
-    title: 'Roller Shades',
-    iconClass: 'nb-roller-shades',
+    title: 'CoinGecko',
+    iconClass: '',
     type: 'success',
+    link: 'https://www.coingecko.com/en',
+    logo: 'assets/images/Coinmarketcap.jpg'
+
   };
   wirelessAudioCard: CardSettings = {
-    title: 'Wireless Audio',
-    iconClass: 'nb-audio',
+    title: 'CoinMarketCal',
+    iconClass: '',
     type: 'info',
+    link: 'https://coinmarketcal.com/en/',
+    logo: 'assets/images/Coinmarketcap.jpg'
+
   };
   coffeeMakerCard: CardSettings = {
-    title: 'Coffee Maker',
-    iconClass: 'nb-coffee-maker',
+    title: 'Etherscan',
+    iconClass: '',
     type: 'warning',
+    link: 'https://etherscan.io/',
+    logo: 'assets/images/Coinmarketcap.jpg'
+
   };
 
   statusCards: string;
