@@ -39,6 +39,8 @@ export class SecurityCamerasComponent implements OnInit, OnDestroy {
       .subscribe((width: number) => {
         this.actionSize = width > breakpoints.md ? 'medium' : 'small';
       });
+
+    this.isSingleView = true;
   }
 
   ngOnDestroy() {

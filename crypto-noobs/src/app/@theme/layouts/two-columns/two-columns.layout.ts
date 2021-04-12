@@ -22,9 +22,11 @@ import { LayoutService } from '../../../@core/utils';
         <ng-content select="router-outlet"></ng-content>
       </nb-layout-column>
 
+      <!--
       <nb-layout-footer fixed>
         <ngx-footer></ngx-footer>
       </nb-layout-footer>
+      -->
 
     </nb-layout>
   `,

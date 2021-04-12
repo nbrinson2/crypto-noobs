@@ -3,10 +3,42 @@
 @import '~@nebular/theme/styles/global/breakpoints';
 
 @include nb-install-component() {
+
+  nb-card {
+    background: transparent;
+    border: transparent;
+  }
+
   .solar-card nb-card-header {
     border: none;
     padding-bottom: 0;
   }
+
+  .services {
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
+  .grid-view {
+    flex: 1 0 100%;
+  }
+
+  .grid-view {
+    display: flex;
+    flex-wrap: wrap;
+
+    .services {
+      flex: 1 0 50%;
+    }
+  }
+
+  .grid-container {
+    height: 100%;
+    display: flex;
+  }
+  
 
   @include media-breakpoint-down(sm) {
     ngx-traffic {
