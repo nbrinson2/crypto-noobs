@@ -24,7 +24,7 @@ import { LayoutService } from '../../../@core/utils';
         <ngx-footer></ngx-footer>
       </nb-layout-footer>
       -->
-      
+
     </nb-layout>
   `,
 })

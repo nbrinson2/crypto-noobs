@@ -26,14 +26,14 @@ export class DashboardComponent implements OnDestroy {
     iconClass: '',
     type: 'primary',
     link: 'https://coinmarketcap.com/',
-    logo: 'assets/images/Coinmarketcap.jpg'
+    logo: 'assets/images/Coinmarketcap.jpg',
   };
   rollerShadesCard: CardSettings = {
     title: 'CoinGecko',
     iconClass: '',
     type: 'success',
     link: 'https://www.coingecko.com/en',
-    logo: 'assets/images/Coinmarketcap.jpg'
+    logo: 'assets/images/Coinmarketcap.jpg',
 
   };
   wirelessAudioCard: CardSettings = {
@@ -41,7 +41,7 @@ export class DashboardComponent implements OnDestroy {
     iconClass: '',
     type: 'info',
     link: 'https://coinmarketcal.com/en/',
-    logo: 'assets/images/Coinmarketcap.jpg'
+    logo: 'assets/images/Coinmarketcap.jpg',
 
   };
   coffeeMakerCard: CardSettings = {
@@ -49,7 +49,7 @@ export class DashboardComponent implements OnDestroy {
     iconClass: '',
     type: 'warning',
     link: 'https://etherscan.io/',
-    logo: 'assets/images/Coinmarketcap.jpg'
+    logo: 'assets/images/Coinmarketcap.jpg',
 
   };
 
